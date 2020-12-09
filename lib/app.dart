@@ -1,4 +1,4 @@
-import 'package:baseapp/screens/base/ui/base_screen.dart';
+import 'package:baseapp/screens/base/ui/base_gate.dart';
 import 'package:baseapp/themes/est_theme_dark.dart';
 import 'package:baseapp/themes/est_theme_light.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class _AppState extends State<App> {
       initialRoute: '/',
       home: Scaffold(
         resizeToAvoidBottomInset: false,
-        body: BaseScreen(),
+        body: BaseGate(),
       ),
     );
   }
