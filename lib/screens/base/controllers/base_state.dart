@@ -6,4 +6,17 @@ class BaseState extends ChangeNotifier {
   // under the home_screen widget.
   // ...such a currently selected sorting and filtering, currency, local values
 
+  String _name = 'Base State gave us this';
+  String get name => _name;
+  set name(String name) {
+    _name = name;
+    notifyListeners();
+  }
+
+  bool _toggle = false;
+  bool get toggle => _toggle;
+  set toggle(bool toggle) {
+    _toggle = toggle;
+    notifyListeners();
+  }
 }
